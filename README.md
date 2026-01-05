@@ -67,7 +67,3 @@ export LANG=en_DE.UTF-8
 ```
 
 ---
-
-## License
-
-MIT License

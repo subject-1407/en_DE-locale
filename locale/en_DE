@@ -1,0 +1,159 @@
+comment_char %
+escape_char /
+
+% This file is *not* part of the GNU C Library and contains locale data.
+% The Free Software Foundation does not claim any copyright interest
+% in the locale data contained in this file.  The foregoing does not
+% affect the license of the GNU C Library as a whole.  It does not
+% exempt you from the conditions of the license if your use would
+% otherwise be governed by that license.
+
+% English language locale for Germany
+% Source: subject
+% Address:
+% Contact: subject
+% Email: subject@threepixels.de
+% Language: en
+% Territory: DE
+% Revision: 1.0
+% Date: 2023-04-24
+% Users: general
+
+LC_IDENTIFICATION
+title      "English locale for Germany"
+source     "subject"
+address    ""
+contact    "subject"
+email      "subject@threepixels.de"
+tel        ""
+fax        ""
+language   "English"
+territory  "Germany"
+revision   "1.0"
+date       "2023-04-24"
+
+category "i18n:2012";LC_IDENTIFICATION
+category "i18n:2012";LC_CTYPE
+category "i18n:2012";LC_COLLATE
+category "i18n:2012";LC_TIME
+category "i18n:2012";LC_NUMERIC
+category "i18n:2012";LC_MONETARY
+category "i18n:2012";LC_MESSAGES
+category "i18n:2012";LC_PAPER
+category "i18n:2012";LC_NAME
+category "i18n:2012";LC_ADDRESS
+category "i18n:2012";LC_TELEPHONE
+category "i18n:2012";LC_MEASUREMENT
+END LC_IDENTIFICATION
+
+LC_CTYPE
+copy "i18n"
+
+translit_start
+include "translit_combining";""
+translit_end
+END LC_CTYPE
+
+LC_COLLATE
+% Copy the template from ISO/IEC 14651
+copy "iso14651_t1"
+END LC_COLLATE
+
+LC_MONETARY
+int_curr_symbol         "EUR "
+currency_symbol         "<U20AC>"
+mon_decimal_point       ","
+mon_thousands_sep       "."
+mon_grouping            3;3
+positive_sign           ""
+negative_sign           "-"
+int_frac_digits         2
+frac_digits             2
+p_cs_precedes           0
+p_sep_by_space          1
+n_cs_precedes           0
+n_sep_by_space          1
+p_sign_posn             1
+n_sign_posn             1
+END LC_MONETARY
+
+LC_NUMERIC
+decimal_point           ","
+thousands_sep           "."
+grouping                3;3
+END LC_NUMERIC
+
+LC_TIME
+abday       "Sun";"Mon";"Tue";"Wed";"Thu";"Fri";"Sat"
+day         "Sunday";/
+            "Monday";/
+            "Tuesday";/
+            "Wednesday";/
+            "Thursday";/
+            "Friday";/
+            "Saturday"
+abmon       "Jan";"Feb";/
+            "Mar";"Apr";/
+            "May";"Jun";/
+            "Jul";"Aug";/
+            "Sep";"Oct";/
+            "Nov";"Dec"
+mon         "January";/
+            "February";/
+            "March";/
+            "April";/
+            "May";/
+            "June";/
+            "July";/
+            "August";/
+            "September";/
+            "October";/
+            "November";/
+            "December"
+d_t_fmt     "%a %d %b %Y %T %Z"
+d_fmt       "%d.%m.%Y"
+t_fmt       "%T"
+am_pm       "am";"pm"
+t_fmt_ampm  ""
+date_fmt    "%a %-d. %b %H:%M:%S %Z %Y"
+week    7;19971130;4
+first_weekday 2
+END LC_TIME
+
+LC_MESSAGES
+copy "en_US"
+END LC_MESSAGES
+
+LC_PAPER
+copy "i18n"
+END LC_PAPER
+
+LC_TELEPHONE
+tel_int_fmt    "+%c %a %l"
+tel_dom_fmt    "%A %l"
+int_select     "00"
+int_prefix     "49"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+copy "i18n"
+END LC_MEASUREMENT
+
+LC_NAME
+copy "en_US"
+END LC_NAME
+
+LC_ADDRESS
+postal_fmt    "%f%N%a%N%d%N%b%N%s %h %e %r%N%z %T%N%c%N"
+country_name  "Deutschland"
+country_post  "D"
+country_ab2   "DE"
+country_ab3   "DEU"
+country_num   276
+country_car   "D"
+country_isbn  3
+lang_name     "Deutsch"
+lang_ab       "de"
+lang_term     "deu"
+lang_lib      "ger"
+END LC_ADDRESS

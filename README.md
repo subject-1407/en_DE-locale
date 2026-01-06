@@ -24,3 +24,10 @@ It combines:
 ```
 locale/en_DE
 ```
+
+---
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) 
+
